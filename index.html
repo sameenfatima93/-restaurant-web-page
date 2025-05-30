@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container-fluid nv-cnt">
+            <img src="images/logo.webp" alt="" height="120px" width="210px"> -->
+          <!-- <a class="navbar-brand" href="#">Top navbar</a> -->
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nv-item " id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+              <!-- </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-disabled="true">Publications</a>
+              </li>
+              <li>
+                 
+              </li>
+            </ul>
+            <div class="bt">
+              <button class="btn btn-outline-light get-btn">Get a Franchise</button>
+             
+          
+          <!-- <button class="btn bg-danger order" type="submit">Order Online
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+              </svg>
+          </button>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <div class="container-fluid nv-cnt">
+    <img src="images/logo.webp" alt="" height="120px" width="210px">
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Items + Mobile Buttons -->
+    <div class="collapse navbar-collapse nv-item" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-disabled="true">Publications</a>
+        </li>
+      </ul>
+
+      <!-- Get a Franchise button - Mobile Only -->
+      <div class="d-md-none mb-5 bt">
+        <button class="btn btn-outline-light w-100 mb-5 get-btn">Get a Franchise</button>
+        <button class="btn btn-danger order">
+          Order Online
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle-fill ms-2" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Get a Franchise + Order Online - Desktop Only -->
+    <div class="d-none d-md-flex gap-2 ">
+      <button class="btn btn-outline-light get-btn">Get a Franchise</button>
+      <button class="btn btn-danger order">
+        Order Online
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle-fill ms-2" viewBox="0 0 16 16">
+          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide sld sld-res">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/slide1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/slide2.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide3.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide4.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <section class="after-hero">
+    <div class="container my-5">
+        <div class="p-5 text-center bg-body-dark rounded-3">
+          <h1 class="text-body-">Welcome to <span class="font"> Salt'n Pepper </span> <br>Restaurants! Our Brands</h1>
+          <p class="lead">
+            Please click our brands below for further information, reservations or to order online!
+          </p>
+        </div>
+<div class="container main">
+    <div class="samy-cnt">
+     <div class="container cont-img">
+        <div class="img-cnt" style="margin-left: -10px ;">
+        <img src="images/img2.webp" alt=""
+        height="180px" width="300px">
+       </div>
+     </div><br>
+     <button class="btn btn-outline-light ">Order Now</button>
+     </div>
+     <div class="samy-cnt">
+       <div class="img-cnt">
+        <img src="images/img1.webp" alt=""
+        height="180px" width="300px" style="padding-top: 20px;" id="img2">
+       </div>
+       <button class="btn btn-outline-light ">Order Now</button>
+    </div>
+    <div class="samy-cnt">
+       <div class="img-cnt">
+        <img src="images/img3.webp" alt=""
+        height="170px" width="300px" style="padding-top: 20px;" id="img3">
+       </div> 
+       <button class="btn btn-outline-light ">Reserve  a Table</button>
+    </div>
+    </div>
+    </section>
+<section class="feature-sec">
+  <div class="fran-text">
+    <h1>Salt'n Pepper</h1>
+    <h3>Restaurant Franchises</h3>
+    <p>Each of our franchises are individually managed. For further details, kindly contact them directly.
+    </p>
+  </div>
+        <div class="container col-xxl-8 px-4 py-5  overly" >
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6 mg-di">
+              <img src="images/islamabad.webp" class="id-block mx-lg-auto img- rounded bg-dark" alt="Bootstrap Themes" width="550" height="380" loading="lazy">
+            </div>
+            <div class="col-lg-6 isl">
+              <h6 class="display-5  lh-1 mb-3 ">ISLAMABAD</h6>
+              <h3 class="lead"><span>Salt'n Pepper</span> Restaurant.</h3>
+              <img src="location.svg" alt="">
+              Plot# 55, Shabbir Plaza, Blue Area, F-6, Islamabad <br>
+              <img src="cell-phone.svg" alt="">  Ph: 051-2604904-6 <br> <br> <br>
+              <button class="btn btn-outline-light trd-btn">Get Direction <img src="arrow.svg" alt=""></button>
+
+            </div>
+          </div>
+         </div>
+        </div>
+      
+    <div class="container col-xxl-8  py-0">
+      <div class="row  align-items-center g-5 py-5">
+        <div class="col-md-6 mg-div">
+          <img src="images/faislabad.webp" alt="" width="550"     height="380" class="float-end  rounded">
+        </div>
+          <div class="col-md-6 isl">
+            <h6 class="display-5  lh-1 mb-3 ">FAISALABAD</h6>
+              <h3 class="lead"><span>Salt'n Pepper</span> Restaurant.</h3>
+              <img src="location.svg" alt="">
+              4-Kohinoor City, Faisalabad <br>
+              <img src="cell-phone.svg" alt="">  Ph: 041-8711404 <br> <br> <br>
+              <button class="btn btn-outline-light trd-btn">Get Direction <img src="arrow.svg" alt=""></button>
+          </div>
+      </div>
+    </div>
+      
+      
+      <div class="container col-xxl-8 px-4 py-5 ">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 mg-di">
+            <img src="images/bhawalpore.webp" class="d-block mx-lg-auto  rounded bg-secondary" alt="Bootstrap Themes" width="550" height="380" loading="lazy">
+          </div>
+          <div class="col-lg-6 isl">
+            <h6 class="display-5  lh-1 mb-3 ">BAHAWALPUR</h6>
+              <h3 class="lead"><span>Salt'n Pepper</span> Restaurant.</h3>
+              <img src="location.svg" alt="">
+              D.C Chowk, opposite Commissioner House, Bahawalpur <br>
+              <img src="cell-phone.svg" alt="">  Ph: 062-2740271-2 <br> <br> <br>
+              <button class="btn btn-outline-light trd-btn">Get Direction <img src="arrow.svg" alt=""></button>
+            
+          </div>
+      </div>
+      </div>
+      </div>
+      <section class="more-fran">
+        <h1>Salt'n Pepper</h1>
+        <h3>Express Franchises</h3>
+        <div class="container crd-cnt">
+          <!-- cards start's hare one -->
+          <div class="card crd">
+              <img src="images/sarghoda.webp" alt="">
+              <div class="txt-cnt">
+                  <h6>SARGHODA</h6>
+                  <h4 class="lead"><span>Salt'n Pepper</span> Express.</h4>
+                  <!-- Wrapper for location icon + text -->
+                  <div class="location">
+                      <img src="location.svg" alt="">
+                      <p>Opposite Sargodha Arts Council Babar Road</p>
+                  </div><div class="cell-phone">
+                    <img src="cell-phone.svg" alt="">
+                    <p>Ph: 048-3725500</p>
+                </div>
+                <button class="btn btn-outline-light frd-btn">Get Direction
+                  <img src="point-top-arrow.svg" alt=""> </button>
+      
+              </div> 
+          </div>
+          <!-- card two -->
+          <div class="card crd">
+            <img src="images/jehlum.webp" alt="">
+            <div class="txt-cnt ">
+                <h6>JHELUM</h6>
+                <h4 class="lead"><span>Salt'n Pepper</span> Express.</h4>
+                <!-- Wrapper for location icon + text -->
+                <div class="location">
+                    <img src="location.svg" alt="">
+                    <p>Opposite Dancing Fountain Gallery 2 Citi Housing Jhelum,</p>
+                </div><div class="cell-phone">
+                  <img src="cell-phone.svg" alt="">
+                  <p>Ph: 0307-7675555</p>
+              </div>
+              <button class="btn btn-outline-light frd-btn">Get Direction
+                <img src="point-top-arrow.svg" alt=""> </button>
+    
+            </div> 
+        </div>
+        <!-- card three -->
+        <div class="card crd">
+          <img src="images/faisal town.webp" alt="">
+          <div class="txt-cnt ">
+              <h6>FASAIL TOWN</h6>
+              <h4 class="lead"><span>Salt'n Pepper</span> Express.</h4>
+              <!-- Wrapper for location icon + text -->
+              <div class="location">
+                  <img src="location.svg" alt="">
+                  <p> 34-C Abul Hassan Isfahani Rd, Faisal Town,Lahore</p>
+              </div><div class="cell-phone">
+                <img src="cell-phone.svg" alt="">
+                <p>Ph: 042-111-100-678</p>
+            </div>
+            <button class="btn btn-outline-light frd-btn">Get Direction
+              <img src="point-top-arrow.svg" alt=""> </button>
+  
+          </div> 
+      </div>
+      <!-- card foure -->
+      <div class="card crd">
+        <img src="images/dha.webp" alt="">
+        <div class="txt-cnt">
+            <h6>DHA</h6>
+            <h4 class="lead"><span>Salt'n Pepper</span> Express.</h4>
+            <!-- Wrapper for location icon + text -->
+            <div class="location">
+                <img src="location.svg" alt="">
+                <p>93-Y Phase III, DHA,Lahore</p>
+            </div><div class="cell-phone">
+              <img src="cell-phone.svg" alt="">
+              <p>Ph: 042-111-100-678</p>
+          </div>
+          <button class="btn btn-outline-light frd-btn">Get Direction
+            <img src="point-top-arrow.svg" alt=""> </button>
+
+        </div> 
+    </div>
+    <!-- card five -->
+    <div class="card crd">
+      <img src="images/bahriya town.webp" alt="">
+      <div class="txt-cnt ">
+          <h6>BAHRIA TOWN</h6>
+          <h4 class="lead"><span>Salt'n Pepper</span> Express.</h4>
+          <!-- Wrapper for location icon + text -->
+          <div class="location">
+              <img src="location.svg" alt="">
+              <p>Arwa Heights Building 19 Nishtar Block, Sector E, Bahria Town Lahore,</p>
+          </div><div class="cell-phone">
+            <img src="cell-phone.svg" alt="">
+            <p>Ph: 042-111-100-678</p>
+        </div>
+        <button class="btn btn-outline-light frd-btn">Get Direction
+          <img src="point-top-arrow.svg" alt=""> </button>
+
+      </div> 
+  </div>
+  <!-- card six -->
+  <div class="card crd">
+    <img src="images/gujar khan.webp" alt="">
+    <div class="txt-cnt ">
+        <h6>GUJAR KHAN</h6>
+        <h4 class="lead"><span>Salt'n Pepper</span> Express.</h4>
+        <!-- Wrapper for location icon + text -->
+        <div class="location">
+            <img src="location.svg" alt="">
+            <p> New Metro City Gujar Khan</p>
+        </div>
+        <div class="cell-phone">
+          <img src="cell-phone.svg" alt="">
+          <p>Ph: 0321-1114962
+          </p>
+      </div>
+      <button class="btn btn-outline-light frd-btn">Get Direction
+        <img src="point-top-arrow.svg" alt=""> </button>
+
+    </div> 
+</div>
+<!-- card seven -->
+<div class="card crd">
+  <img src="images/lahore.webp" alt="">
+  <div class="txt-cnt">
+      <h6>LAHORE</h6>
+      <h4 class="lead"><span>Salt'n Pepper</span> Express.</h4>
+      <!-- Wrapper for location icon + text -->
+      <div class="location">
+          <img src="location.svg" alt="">
+          <p>Shop no.5, Arcade Block, Fortress Stadium, Lahore</p>
+      </div><div class="cell-phone">
+        <img src="cell-phone.svg" alt="">
+        <p>Ph: 042-366-23-100</p>
+    </div>
+    <button class="btn btn-outline-light frd-btn">Get Direction
+      <img src="point-top-arrow.svg" alt=""> </button>
+
+  </div> 
+</div>
+<!-- card eight -->
+<div class="card crd">
+<img src="images/gujrat.webp" alt="">
+<div class="txt-cnt ">
+    <h6>GUJRAT</h6>
+    <h4 class="lead"><span>Salt'n Pepper</span> Express.</h4>
+    <!-- Wrapper for location icon + text -->
+    <div class="location">
+        <img src="location.svg" alt="">
+        <p>Service Mor, Gujrat</p>
+    </div><div class="cell-phone">
+      <img src="cell-phone.svg" alt="">
+      <p>Ph: 0311-1124600</p>
+  </div>
+  <button class="btn btn-outline-light frd-btn">Get Direction
+    <img src="point-top-arrow.svg" alt=""> </button>
+
+</div> 
+</div>
+<!-- card nine -->
+<div class="card crd">
+<img src="images/sahiwal.webp" alt="">
+<div class="txt-cnt ">
+  <h6>SAHIWAL</h6>
+  <h4 class="lead"><span>Salt'n Pepper</span> Express.</h4>
+  <!-- Wrapper for location icon + text -->
+  <div class="location">
+      <img src="location.svg" alt="">
+      <p> Opposite Main Gate Police Line, Sahiwal</p>
+  </div>
+  <div class="cell-phone">
+    <img src="cell-phone.svg" alt="">
+    <p>Ph: 040-4515485
+    </p>
+</div>
+<button class="btn btn-outline-light frd-btn">Get Direction
+  <img src="point-top-arrow.svg" alt=""> </button>
+
+</div> 
+</div>
+      </div>   
+    </section>
+    <section class="village-fran">
+      <h1>Salt'n Pepper</h1>
+      <h3>Village Franchise</h3>
+      <div class="container col-xxl-8  py-0">
+        <div class="row  align-items-center g-5 py-5">
+          <div class="col-md-6 mg-di">
+            <img src="images/village.webp" alt="" width="550"     height="380" class="float-end  rounded">
+          </div>
+            <div class="col-md-6 vilag">
+              <h6 class="display-5  lh-1 mb-3 ">GUJRANWALA</h6>
+                <h3 class="lead"><span>Salt'n Pepper</span> Village.</h3>
+                <img src="location.svg" alt="">
+                Adjacent to Rida Marquees /DHA Main Gate, GT Road Gujranwala Cantt <br>
+                <img src="cell-phone.svg" alt="">  Ph: 055-3884500 l ,055-3880400 <br> <br> <br>
+                <button class="btn  btn-success fift-btn">Get Direction <img src="arrow.svg" alt=""></button>
+            </div>
+        </div>
+      </div>
+      
+    </section>
+
+  <div class="container px-4 py-5 fran-soon" 
+       id="custom-cards">
+      <h1>Salt'n Pepper</h1>
+        <h3>Express Franchises <span>(Opening Soon)</span></h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card soon-crd">
+               <img src="location-soon.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Opening Soon
+                </h5>
+                <p class="card-text">Salt'n Pepper <span>Express
+                  Burewala</span>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card soon-crd">
+               <img src="location-soon.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Opening Soon
+                </h5>
+                <p class="card-text">Salt'n Pepper <span>Express
+                  Blue World City Rawalpindi</span>.</p>
+            </div>
+          </div>
+        </div><div class="col">
+          <div class="card soon-crd">
+               <img src="location-soon.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Opening Soon
+                </h5>
+                <p class="card-text">Salt'n Pepper <span>Express
+                  Al-Jalil Garden Sharqpur</span>.</p>
+            </div>
+          </div>
+        </div><div class="col">
+          <div class="card soon-crd">
+               <img src="location-soon.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Opening Soon
+                </h5>
+                <p class="card-text">Salt'n Pepper <span>Express
+                  Al-Jalil Garden
+                  Sadhoke</span>.</p>
+            </div>
+          </div>
+        </div><div class="col">
+          <div class="card soon-crd">
+               <img src="location-soon.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Opening Soon
+                </h5>
+                <p class="card-text">Salt'n Pepper <span id="al-j">Express
+                  Al-Jalil Garden Sheikhupura</span>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card soon-crd">
+               <img src="location-soon.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Opening Soon
+                </h5>
+                <p class="card-text">Salt'n Pepper <span>Express
+                  DHA Lahore</span>.</p>
+            </div>
+          </div>
+        </div>
+
+          <!-- <<div class="col">
+          <div class="card soon-crd">
+               <img src="location-soon.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Opening Soon
+                </h5>
+                <p class="card-text">Salt'n Pepper <span>Express
+                  Burewala</span>.</p>
+            </div>
+          </div>
+        </div>div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="col">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div> -->
+        </div> <br> <br>
+        <h3 style="font-size: 37px; opacity: .4;">Social Feed</h3>
+        <div class="sf-mg-ctn">
+       <img src="images/sf five.webp" alt="" height="190px" width="200px"> 
+       <img src="images/sf four.webp" alt="" height="190px" width="200px"> 
+       <img src="images/sf one.webp" alt=""height="190px" width="200px"> 
+       <img src="images/sf seven.webp" alt=""height="190px" width="200px">
+       <img src="images/sf three.webp" alt=""height="190px" width="200px" > 
+       <img src="images/sf six.webp" alt=""height="190px" width="200px">
+
+      </div> 
+      <br> <br> 
+
+      <footer class="footer-cnt">
+        <div class="row flx">
+          <div class="col col-sm-6 col-md-4 col-lg-3 ">
+            <div class="txt">
+              <img src="images/logo.webp" alt="" height="100px"
+              width="150px">
+              <p >The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service, extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dinning destinations in Lahore. From family occasions to business dinner and moments of the heart, this place is where unforgettable memories are made.</p>
+              <ul class="link-term-cnd">
+             <li> <a href="">Terms & conditions</a></li>
+             <li> <a href="">Privacy policy</a></li>
+            </ul>
+            </div>
+              <!-- <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> 
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul> 
+             </div>  -->
+
+
+          </div>
+
+          <div class=" col col-sm-6 col-md-4 col-lg-3 text-bx cntact-text">
+            <h3>Site Links</h3>
+
+            <div class="text-two  flex-column">
+             <ul class="nav flex-column">
+              <!-- <li class="nav-item mb-2 ftt">Site Links</a></li> -->
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Publications</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Get a Franchise</a></li> 
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Feedback</a></li>
+              </ul> 
+            </div>
+          </div> 
+
+          <div class="col-sm-12 col-md-4 col-lg-3 cntact-text">
+
+              <h3 >Contact Us</h3>
+
+              <h4>Head office Address</h4> 
+              <p>Foodconsults (Pvt) Ltd
+                 23-Usman Block, New
+                GardenTown, Lahore, Pakistan</p>
+            
+              <h4>Head office number</h4>
+              <p>+92 42 358 509 31</p>
+              <p>+92 42 358 509 30</p>
+
+              <h4>Email Address</h4>
+              <p>snpfood@brain.net.pk</p>
+
+              <h4>Free delivery number</h4>
+              <p>+92 42 111 100 678</p>
+              <p>+92 03 111 444 610</p>
+        </div>
+        
+
+          <div class="col-sm-12 col-md-4 col-lg-3 icone-cont">
+          <h3>Contact Us</h3>
+          <div  class="inline-blk">
+          <div class="bg-icon"><img src="icons/facebook-round-svgrepo-com (1).png" alt="" height="45px" width="45px"></div>
+          <img src="icons/instagram-logo-facebook-svgrepo-com.png" alt=""height="45px" width="45px">
+          <div class="bg-icon"><img src="icons/twitter-round-svgrepo-com.png" alt="" height="45px" width="45px"></div>
+        </div> <br>
+        <div class="row-cols-2  app-img">
+          <img src="icons/apple store image.webp" alt="">
+          <img src="icons/plystore image.webp" alt="">
+
+        </div>
+      </div>
+      </footer >
+      
+        
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4  scnd-ftr">
+            <p class="col-md-4 mb-0 text-body-light "><span>© 2025 Snp Main</span></p>
+        
+            <!-- <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+            <!-- </a>  -->
+        
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><span>  Powered by tossdown.com</span></a></li>
+              <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li> -->
+            </ul>
+          </footer>
+        
+       
+      <!-- <footer class="py-5 footer-cnt">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <div class="txt">
+            <img src="images/logo.webp" alt="" height="100px"
+            width="150px">
+            <p >The Salt’n Pepper Restaurants are an example of gracious dinning, outstanding service, extraordinary classic and contemporary cuisine. The restaurants have become the ultimate dinning destinations in Lahore. From family occasions to business dinner and moments of the heart, this place is where unforgettable memories are made.</p>
+            <ul class="link-term-cnd">
+           <li> <a href="">Terms & conditions</a></li>
+           <li> <a href="">Privacy policy</a></li>
+          </ul>
+          </div>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> -->
+              <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul> -->
+          <!-- </div> -->
+    
+          <!-- <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div> -->
+    
+          <!-- <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div> -->
+    
+        <!-- <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
